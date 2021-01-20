@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sivanat's portfolio open for hiring!" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Resumek</title>
+    <link rel="stylesheet" href={% static 'home/css/reset.css' %}/> <link
+    rel="stylesheet" href={% static 'home/css/style.css' %} />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <!-- nav -->
+    <div class="nav">
+      <!--Begin Pattern HTML-->
+      <a href="#me">
+        <h1>mek</h1>
+      </a>
+      <ul class="menu">
+        <li><a href="#present" class="menu-item">Present</a></li>
+        <li><a href="#past" class="menu-item">Past</a></li>
+        <li><a href="#future" class="menu-item">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- me -->
+    <div class="me" data-aos="fade-in" id="me">
+      <div class="me-text">
+        <h1>Hi i'm Mek.</h1>
+        <p>a Software Engineer and small time Foodies</p>
+        <hr />
+        <p>good food, good design and simple things</p>
+      </div>
+      <div class="me-pic">
+        <img src={% static 'home/img/portrait.jpg' %} alt="" />
+      </div>
+    </div>
+    <div id="present"></div>
+    <!-- present -->
+    <div class="pres" data-aos="fade-up">
+      <h1>What i can do at the present time.</h1>
+      <div class="skills">
+        <div class="desc">
+          <p>I will describe how good i am at those thing with color code.</p>
+          <ul>
+            <li>
+              <p class="gold">Gold</p>
+              - Excellent! i know tons about this.
+            </li>
+            <li>
+              <p class="silver">Silver</p>
+              - Fairly familar with this subject.
+            </li>
+            <li>
+              <p class="bronze">Bronze</p>
+              - Can do basics thing, have some room for improvement
+            </li>
+          </ul>
+        </div>
+        <ul class="scale-up-center">
+          <li class="silver" data-aos="fade-up"><span>Bash</span></li>
+          <li class="gold" data-aos="fade-up"><span>Git</span></li>
+          <li class="silver" data-aos="fade-up"><span>SQL</span></li>
+          <li class="silver" data-aos="fade-up"><span>NoSQL</span></li>
+          <li class="gold" data-aos="fade-up"><span>HTML</span></li>
+          <li class="gold" data-aos="fade-up"><span>CSS</span></li>
+          <li class="gold" data-aos="fade-up"><span>JS</span></li>
+          <li class="gold" data-aos="fade-up"><span>Python</span></li>
+          <li class="silver" data-aos="fade-up"><span>Django</span></li>
+          <li class="gold" data-aos="fade-up"><span>Bootstrap4</span></li>
+          <li class="bronze" data-aos="fade-up"><span>Jquery</span></li>
+          <li class="gold" data-aos="fade-up"><span>Node.js</span></li>
+          <li class="bronze" data-aos="fade-up"><span>Vue.js</span></li>
+          <li class="gold" data-aos="fade-up"><span>React.js</span></li>
+          <li class="bronze" data-aos="fade-up"><span>Next.js</span></li>
+          <li class="silver" data-aos="fade-up"><span>GraphQL</span></li>
+          <li class="silver" data-aos="fade-up"><span>UX/UI</span></li>
+          <li class="silver" data-aos="fade-up"><span>CI/CD</span></li>
+          <li class="silver" data-aos="fade-up"><span>Docker</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- past -->
+    <div class="past" id="past">
+      <h1>What did i do in the past.</h1>
+      <div class="overlay" data-aos="fade-in">
+        <img src={% static 'home/img/arcadia.png' %} alt="" />
+        <div>
+          <h2>Arcadia <span class="overlay-year">2017</span></h2>
+          <h5>Wordpress</h5>
+          <p>
+            This website was made using Wordpress. Arcadia is a corporate
+            website specialized in flooring/construction.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="overlay" data-aos="fade-in">
+        <img src={% static 'home/img/lamax.png' %} alt="" />
+        <div>
+          <h2>The-lama-x<span class="overlay-year">2018</span></h2>
+          <h5>Python3 / Arcade</h5>
+          <p>
+            My freshman year game project. Made with Python3 using Arcade
+            Library as an introduction to OOP programming concept.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="overlay" data-aos="fade-in">
+        <img src={% static 'home/img/narasiri.png' %} alt="" />
+        <div>
+          <h2>Narasiri<span class="overlay-year">2018</span></h2>
+          <h5>Vanilla ( HTML5 / CSS3 / JS ) / CD</h5>
+          <p>
+            The website was made for Narasiri.,co.ltd. Real estate seller in
+            Nakhon Nayok, Thailand. Including automatic deployment with selected
+            web hosting sevice.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="overlay" data-aos="fade-in">
+        <img src={% static 'home/img/concentrap.png' %} alt="" />
+        <div>
+          <h2>Concentrap<span class="overlay-year">2019</span></h2>
+          <h5>Python3 / Jquery / Bootstrap4 / IoT</h5>
+          <p>
+            Grouping with other 4 friends to make an IoT device with topic of
+            mental health in mind in this 5 days camp. What we made was a device
+            that collect statistic to help psychiatrist in decision related to
+            kid with ADHD potential.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="overlay" data-aos="fade-in">
+        <img src={% static 'home/img/TedxKasetsartU.png' %} alt="" />
+        <div>
+          <h2>TedxKasetsartU2019<span class="overlay-year">2019</span></h2>
+          <h5>React / Next.js</h5>
+          <p>
+            Joined the developer team in charge of creating the TedxKasetsartU
+            website using React framework Next.js for server-side rendering.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="overlay" data-aos="fade-in">
+        <img src={% static 'home/img/sunday.png' %} alt="" />
+        <div>
+          <h2>Sunday Insurance<span class="overlay-year">2020</span></h2>
+          <h5>React / Node.js</h5>
+          <p>
+            Experience working in an enterprise-level team of developers as Full
+            Stack intern, using React.js GraphQL and Node.js.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="overlay" data-aos="fade-in">
+        <img src={% static 'home/img/eatic.png' %} alt="" />
+        <div>
+          <h2>Eatic<span class="overlay-year">2020</span></h2>
+          <h5>Flutter</h5>
+          <p>
+            Made an intermittent fasting tracker app with Flutter starting from
+            scratch to deploying to mobile devices.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="future" id="future" data-aos="zoom-in-left">
+      <div class="text">
+        <h1>Your project could be in my future!</h1>
+        <p>If you wanted to give me invitation or feedback.</p>
+        <p>please let me know through my email!</p>
+        <div class="mailme">
+          <a href="mailto:sivanat.sub@gmail.com">sivanat.sub@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Django thing -->
+    <div style="text-align: center">
+      <h1>My django assignment</h1>
+      <form action={% url 'message' %} method="post">
+        {% csrf_token %}
+        <label for="email">Your email: </label>
+        <input id="email" type="email" name="email" placeholder="name@domain.com" />
+        <label for="message">Your message: </label>
+        <input id="message" type="text" name="message" placeholder="Hi...." />
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+
+    <footer>
+      <div>
+        <h1>mek</h1>
+        <p>
+          made with ⌨️ and 🖱️ by
+          <a href="https://github.com/tiemfah"> Sivanat Subpaisarn</a>
+        </p>
+      </div>
+      <div class="social">
+        <a href="https://github.com/tiemfah">
+          <img
+            src="https://image.flaticon.com/icons/svg/25/25231.svg"
+            alt="githubIcon"
+        /></a>
+        <a href="https://www.instagram.com/__m.svnt/">
+          <img
+            src="https://image.flaticon.com/icons/svg/733/733614.svg"
+            alt="InstagramIcon"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <div class="to-the-top">
+      <a href="#me">to the top!</a>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+      });
+    </script>
+  </body>
+</html>
